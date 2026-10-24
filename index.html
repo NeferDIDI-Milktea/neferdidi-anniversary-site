@@ -3,12 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#102b2b">
+  <meta name="theme-color" content="#0b0b0b">
   <meta name="description" content="احتفل مع Neferdidi بمرور سنتين، وسجّل لحظتك وشاركها معانا.">
+  <link rel="canonical" href="https://neferdidi-milktea.github.io/neferdidi-anniversary-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Neferdidi">
+  <meta property="og:title" content="سنتين من الحكايات | Two Years of Stories · Neferdidi">
+  <meta property="og:description" content="شاركنا لحظتك واحتفل معانا بسنتين من Neferdidi. Share your moment and celebrate two years with us.">
+  <meta property="og:url" content="https://neferdidi-milktea.github.io/neferdidi-anniversary-site/">
+  <meta property="og:image" content="https://neferdidi-milktea.github.io/neferdidi-anniversary-site/og-image.png">
+  <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ar_EG"><meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://neferdidi-milktea.github.io/neferdidi-anniversary-site/og-image.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
   <title>سنتين من الحكايات | Neferdidi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,39 +30,48 @@
     <div class="intro-orbit orbit-one"></div><div class="intro-orbit orbit-two"></div>
     <div class="intro-spark spark-a">✦</div><div class="intro-spark spark-b">✧</div><div class="intro-spark spark-c">✦</div>
     <div class="intro-content">
-      <div class="brand-lockup intro-logo"><span class="brand-mark">N</span><span>NEFERDIDI</span></div>
+      <div class="brand-lockup intro-logo"><img class="brand-logo" src="logo-white.png" alt="Neferdidi"></div>
       <div class="anniversary-number">02<span>YEARS</span></div>
       <p class="intro-kicker">TWO YEARS. THOUSANDS OF MOMENTS.</p>
-      <h1>حكايتنا كبرت<br><em>بيكم</em></h1>
-      <p class="intro-sub">كل لحظة معاكم تستاهل تفضل فاكرة.</p>
-      <button class="button button-gold intro-enter" id="enterExperience">ادخل الاحتفال <span aria-hidden="true">←</span></button>
-      <button class="skip-intro" id="skipIntro">تخطي المقدمة</button>
+      <h1 data-i18n="intro_h1">حكايتنا كبرت<br><em>بيكم</em></h1>
+      <p class="intro-sub" data-i18n="intro_sub">كل لحظة معاكم تستاهل تفضل فاكرة.</p>
+      <button class="button button-gold intro-enter" id="enterExperience" data-i18n="intro_enter">ادخل الاحتفال <span aria-hidden="true">←</span></button>
+      <button class="skip-intro" id="skipIntro" data-i18n="intro_skip">تخطي المقدمة</button>
     </div>
+    <button type="button" class="lang-toggle lang-toggle-intro" aria-label="Language">English</button>
+    <nav class="intro-social-links" id="introSocialLinks" aria-label="Social media"></nav>
     <div class="intro-bottom">A MOMENT WORTH KEEPING</div>
   </div>
 
   <header class="site-header" id="top">
-    <a class="brand-lockup" href="#top" aria-label="Neferdidi home"><span class="brand-mark">N</span><span>NEFERDIDI</span></a>
-    <a href="#capture" class="header-link">سجّل لحظتك <span aria-hidden="true">↗</span></a>
+    <a class="brand-lockup" href="#top" aria-label="Neferdidi home"><img class="brand-logo" src="logo-orange.png" alt="Neferdidi"></a>
+    <nav class="header-social-links" id="headerSocialLinks" aria-label="Social media"></nav>
+    <div class="header-right"><a href="#capture" class="header-link" data-i18n="header_link">سجّل لحظتك <span aria-hidden="true">↗</span></a><button type="button" class="lang-toggle" aria-label="Language">English</button></div>
   </header>
 
   <main>
     <section class="hero section-wrap">
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> الذكرى السنوية الثانية</p>
-        <h2>سنتين من الحكايات،<br><em>ولسه البداية.</em></h2>
-        <p class="hero-description">من أول رشفة لأول ذكرى، إنتوا كنتوا جزء من حكايتنا. دلوقتي جه دوركم تحكولنا عن لحظتكم.</p>
-        <a class="button button-gold" href="#capture">خلّي لحظتك جزء من الحكاية <span aria-hidden="true">←</span></a>
-        <div class="hero-footnote"><span class="tiny-star">✦</span> صوّر صورة أو فيديو قصير وشاركنا الذكرى.</div>
+        <p class="eyebrow" data-i18n="hero_eyebrow"><span></span> الذكرى السنوية الثانية</p>
+        <h2 data-i18n="hero_h2">سنتين من الحكايات،<br><em>ولسه البداية.</em></h2>
+        <p class="hero-description" data-i18n="hero_desc">من أول رشفة لأول ذكرى، إنتوا كنتوا جزء من حكايتنا. دلوقتي جه دوركم تحكولنا عن لحظتكم.</p>
+        <a class="button button-gold" href="#capture" data-i18n="hero_cta">خلّي لحظتك جزء من الحكاية <span aria-hidden="true">←</span></a>
+        <div class="hero-footnote" data-i18n="hero_foot"><span class="tiny-star">✦</span> صوّر صورة أو فيديو قصير وشاركنا الذكرى.</div>
       </div>
-      <div class="hero-art" aria-label="تصميم احتفالي بالذكرى السنوية">
-        <div class="art-halo"></div><div class="art-ring art-ring-a"></div><div class="art-ring art-ring-b"></div>
-        <div class="art-star star-one">✦</div><div class="art-star star-two">✧</div><div class="art-star star-three">✦</div>
-        <div class="art-year">02</div>
-        <div class="art-label"><span>NEFERDIDI</span><b>ANNIVERSARY EDITION</b></div>
-        <div class="art-orb"><div class="orb-inner">N</div></div>
-        <div class="art-ribbon">TWO YEARS TOGETHER</div>
+      <div class="hero-art peek" role="img" aria-label="Neferdidi: two years">
+        <div class="peek-sky"><span class="peek-num" aria-hidden="true">02</span></div>
+        <img class="peek-cat" src="cat-white.png" alt="" width="347" height="274">
+        <div class="peek-wall"><span data-i18n="peek_caption">سنتين معاكم</span></div>
       </div>
+    </section>
+
+    <section class="social-promo section-wrap" id="followUs" aria-labelledby="socialPromoTitle">
+      <div class="social-promo-copy">
+        <p class="eyebrow" data-i18n="social_eyebrow"><span></span> خليك قريب من الحكاية</p>
+        <h2 id="socialPromoTitle" data-i18n="social_h2">الحكاية مكملة <em>على السوشيال.</em></h2>
+        <p data-i18n="social_p">تابعنا علشان تشوفوا مشروباتنا الجديدة، لحظاتكم، وكل جديد من Neferdidi.</p>
+      </div>
+      <nav class="featured-social-links" id="featuredSocialLinks" aria-label="Neferdidi social profiles"></nav>
     </section>
 
     <section class="memory-strip" aria-label="رسالة الاحتفال">
@@ -58,78 +80,119 @@
 
     <section class="capture-section section-wrap" id="capture">
       <div class="section-heading">
-        <p class="eyebrow"><span></span> خلّي اللحظة تعيش</p>
-        <h2>مستعدين نوثّق <em>لحظتك؟</em></h2>
-        <p>اختار كاميرا جهازك أو ارفع صورة وفيديو من المعرض. راجع مشاركتك، وبعدها ابعتهالنا في خطوة واحدة.</p>
+        <p class="eyebrow" data-i18n="cap_eyebrow"><span></span> خلّي اللحظة تعيش</p>
+        <h2 data-i18n="cap_h2">مستعدين نوثّق <em>لحظتك؟</em></h2>
+        <p data-i18n="cap_p">اختار كاميرا جهازك أو ارفع صورة وفيديو من المعرض. راجع مشاركتك، وبعدها ابعتهالنا في خطوة واحدة.</p>
       </div>
 
       <div class="capture-grid">
         <div class="capture-panel">
-          <div class="panel-topline"><span class="live-dot"></span><span id="cameraStatus">الكاميرا جاهزة لما تكون إنت جاهز</span><span class="privacy-chip"><span>✦</span> لحظتك بأمان</span></div>
+          <div class="panel-topline"><span class="live-dot"></span><span id="cameraStatus" data-i18n="cam_ready">الكاميرا جاهزة لما تكون إنت جاهز</span><span class="privacy-chip" data-i18n="privacy"><span>✦</span> لحظتك بأمان</span></div>
           <div class="camera-stage" id="cameraStage">
             <video id="cameraVideo" autoplay muted playsinline hidden></video>
-            <img id="previewImage" alt="معاينة الصورة المختارة" hidden>
+            <img id="previewImage" alt="معاينة الصورة المختارة" data-i18n-attr="alt:alt_preview" hidden>
             <video id="previewVideo" controls playsinline hidden></video>
             <div class="camera-placeholder" id="cameraPlaceholder">
-              <div class="viewfinder"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><div class="viewfinder-mark">N</div></div>
-              <p class="placeholder-title">لحظتك تستاهل تتسجل</p>
-              <p class="placeholder-sub">ابدأ الكاميرا أو اختار ملف من جهازك</p>
+              <div class="viewfinder"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><div class="viewfinder-mark"><img src="favicon.png" alt="" class="mono-img"></div></div>
+              <p class="placeholder-title" data-i18n="ph_title">لحظتك تستاهل تتسجل</p>
+              <p class="placeholder-sub" data-i18n="ph_sub">ابدأ الكاميرا أو اختار ملف من جهازك</p>
             </div>
             <div class="camera-badge" id="recordingBadge" hidden><span class="record-dot"></span> REC <span id="recordTimer">00:00</span></div>
           </div>
           <div class="camera-tools">
-            <div class="mode-switch" role="group" aria-label="اختيار نوع التسجيل">
-              <button type="button" class="mode-button active" data-mode="video" aria-pressed="true"><span>▣</span> فيديو</button>
-              <button type="button" class="mode-button" data-mode="photo" aria-pressed="false"><span>◎</span> صورة</button>
+            <div class="mode-switch" role="group" aria-label="اختيار نوع التسجيل" data-i18n-attr="aria-label:aria_mode">
+              <button type="button" class="mode-button active" data-mode="video" aria-pressed="true" data-i18n="mode_video"><span>▣</span> فيديو</button>
+              <button type="button" class="mode-button" data-mode="photo" aria-pressed="false" data-i18n="mode_photo"><span>◎</span> صورة</button>
             </div>
             <div class="camera-actions">
-              <button class="icon-button" id="switchCamera" type="button" title="تبديل الكاميرا" aria-label="تبديل الكاميرا">⇄</button>
-              <button class="record-button" id="mainCameraAction" type="button"><span class="record-button-icon"></span><b id="cameraActionLabel">ابدأ التسجيل</b></button>
-              <button class="icon-button" id="clearMedia" type="button" title="إعادة" aria-label="إزالة الوسائط المختارة">↺</button>
+              <button class="icon-button" id="switchCamera" type="button" title="تبديل الكاميرا" aria-label="تبديل الكاميرا" data-i18n-attr="title:switch_cam;aria-label:switch_cam">⇄</button>
+              <button class="record-button" id="mainCameraAction" type="button"><span class="record-button-icon"></span><b id="cameraActionLabel" data-i18n="m4">ابدأ التسجيل</b></button>
+              <button class="icon-button" id="clearMedia" type="button" title="إعادة" aria-label="إزالة الوسائط المختارة" data-i18n-attr="title:clear_media;aria-label:clear_media">↺</button>
             </div>
             <div class="secondary-actions">
-              <button type="button" class="text-button" id="startCamera">تشغيل الكاميرا <span>↗</span></button>
-              <label for="fileInput" class="text-button upload-trigger">رفع من المعرض <span>↑</span></label>
+              <button type="button" class="text-button" id="startCamera" data-i18n="start_cam">تشغيل الكاميرا <span>↗</span></button>
+              <label for="fileInput" class="text-button upload-trigger" data-i18n="upload">رفع من المعرض <span>↑</span></label>
               <input id="fileInput" type="file" accept="image/jpeg,image/png,image/webp,video/mp4,video/webm,video/quicktime" hidden>
             </div>
-            <p class="file-note">الفيديو بحد أقصى 30 ثانية، وحجم الملف حتى 100 ميجابايت.</p>
+            <p class="file-note" data-i18n="file_note">الفيديو بحد أقصى 30 ثانية، وحجم الملف حتى 100 ميجابايت.</p>
           </div>
         </div>
 
         <div class="share-panel">
-          <div class="share-heading"><span class="share-step">02 / SHARE</span><h3>خلّينا نعرفك</h3><p>كام تفصيلة صغيرة علشان نحتفظ بذكراك صح.</p></div>
+          <div class="share-heading"><span class="share-step">02 / SHARE</span><h3 data-i18n="share_h3">خلّينا نعرفك</h3><p data-i18n="share_p">كام تفصيلة صغيرة علشان نحتفظ بذكراك صح.</p></div>
           <form id="submissionForm">
-            <label class="field-label" for="customerName">اسمك <span>*</span></label>
-            <input id="customerName" name="name" type="text" maxlength="80" placeholder="اكتب اسمك" autocomplete="name" required>
-            <label class="field-label" for="branch">أنهي فرع زرت؟</label>
+            <label class="field-label" for="customerName" data-i18n="lbl_name">اسمك <span>*</span></label>
+            <input id="customerName" name="name" type="text" maxlength="80" placeholder="اكتب اسمك" data-i18n-attr="placeholder:ph_name" autocomplete="name" required>
+            <label class="field-label" for="branch" data-i18n="lbl_branch">أنهي فرع زرت؟</label>
             <select id="branch" name="branch">
-              <option value="">اختار الفرع (اختياري)</option>
-              <option>Almaza Park</option><option>Sol App</option><option>فرع آخر</option><option>لسه مجربتش الفرع</option>
+              <option value="" data-i18n="opt_branch">اختار الفرع (اختياري)</option>
+              <option>Almaza Park</option><option>Sol App</option><option value="فرع آخر" data-i18n="opt_other">فرع آخر</option><option value="لسه مجربتش الفرع" data-i18n="opt_none">لسه مجربتش الفرع</option>
             </select>
-            <label class="field-label" for="momentNote">احكيلنا عن اللحظة <span class="optional">اختياري</span></label>
-            <textarea id="momentNote" name="note" rows="3" maxlength="300" placeholder="إيه أكتر حاجة بتحبها في Neferdidi؟"></textarea>
-            <label class="consent-row"><input id="consentSubmit" type="checkbox" required><span>أوافق على إرسال الصورة أو الفيديو لفريق Neferdidi للاطلاع عليه والتواصل بخصوص المشاركة. <b>*</b></span></label>
-            <label class="consent-row optional-consent"><input id="consentMarketing" type="checkbox"><span>أوافق بشكل اختياري على استخدام مشاركتي في محتوى Neferdidi على السوشيال ميديا أو المواد التسويقية.</span></label>
-            <p class="consent-note">موافقتك على الإرسال لا تعني موافقتك على النشر. مش هنستخدم مشاركتك تسويقيًا إلا لو وافقت على الاختيار المنفصل.</p>
-            <button class="button button-dark submit-button" type="submit" id="submitButton" disabled>ابعت لحظتي <span aria-hidden="true">←</span></button>
+            <label class="field-label" for="momentNote" data-i18n="lbl_note">احكيلنا عن اللحظة <span class="optional">اختياري</span></label>
+            <textarea id="momentNote" name="note" rows="3" maxlength="300" placeholder="إيه أكتر حاجة بتحبها في Neferdidi؟" data-i18n-attr="placeholder:ph_note"></textarea>
+            <label class="consent-row"><input id="consentSubmit" type="checkbox" required><span data-i18n="consent1">أوافق على إرسال الصورة أو الفيديو لفريق Neferdidi للاطلاع عليه والتواصل بخصوص المشاركة. <b>*</b></span></label>
+            <label class="consent-row optional-consent"><input id="consentMarketing" type="checkbox"><span data-i18n="consent2">أوافق بشكل اختياري على استخدام مشاركتي في محتوى Neferdidi على السوشيال ميديا أو المواد التسويقية.</span></label>
+            <p class="consent-note" data-i18n="consent_note">موافقتك على الإرسال لا تعني موافقتك على النشر. مش هنستخدم مشاركتك تسويقيًا إلا لو وافقت على الاختيار المنفصل.</p>
+            <button class="button button-dark submit-button" type="submit" id="submitButton" data-i18n="submit" disabled>ابعت لحظتي <span aria-hidden="true">←</span></button>
+            <div class="upload-progress" id="uploadProgress" hidden><div class="upload-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="uploadBar"></span></div><b id="uploadPct">0%</b></div>
             <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
           </form>
+          <div class="success-panel" id="successPanel" hidden>
+            <img class="success-cat" src="cat-orange.png" alt="" width="347" height="274">
+            <h3 data-i18n="succ_h">وصلتنا لحظتك</h3>
+            <p data-i18n="succ_p">شكرًا إنك شاركتنا. فريق Neferdidi هيراجعها.</p>
+            <button type="button" class="button button-dark share-site" data-i18n="share_btn">شارك الاحتفال مع صحابك</button>
+            <button type="button" class="text-button" id="sendAnother" data-i18n="succ_again">ابعت لحظة تانية</button>
+          </div>
         </div>
       </div>
     </section>
 
+    <section class="discovery-section section-wrap" id="drinks">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="drinks_eyebrow"><span></span> اكتشف نيفرديدي</p>
+        <h2 data-i18n="drinks_h2">مشروبات تستاهل <em>تتجرب.</em></h2>
+        <p data-i18n="drinks_p">ابدأ بمفضلاتنا، واكتشف باقي المنيو من خلال قنواتنا الرسمية.</p>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="section-actions"><a class="button button-dark" id="menuLink" href="https://neferdidi-milktea.github.io/Website/" target="_blank" rel="noopener" data-i18n="menu_cta">اكتشف المنيو الكامل ↗</a></div>
+    </section>
+
+    <section class="memories-section" id="memories">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="gallery_eyebrow"><span></span> لحظات من مجتمعنا</p>
+          <h2 data-i18n="gallery_h2">حكاياتكم <em>بتكمّل حكايتنا.</em></h2>
+          <p data-i18n="gallery_p">المشاركات المعروضة هنا هي المشاركات التي راجعها فريق Neferdidi ووافق على نشرها.</p>
+        </div>
+        <div class="memory-gallery" id="memoryGallery" aria-live="polite"></div>
+        <p class="gallery-note" data-i18n="gallery_note">لسه بنجمع الذكريات. شاركنا لحظتك، وبعد مراجعتها وموافقتك على النشر ممكن تظهر هنا.</p>
+        <div class="section-actions"><a class="button button-gold" href="#capture" data-i18n="gallery_cta">شاركنا لحظتك ↗</a></div>
+      </div>
+    </section>
+
+    <section class="branches-section section-wrap" id="branches">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="branches_eyebrow"><span></span> مستنيين نشوفكم</p>
+        <h2 data-i18n="branches_h2">حكايتنا مكملة <em>في فروعنا.</em></h2>
+        <p data-i18n="branches_p">اختار الفرع الأقرب ليك وافتح موقعه على الخرائط للتأكد من الاتجاهات.</p>
+      </div>
+      <div class="branch-grid" id="branchGrid"></div>
+    </section>
+
     <section class="closing-section">
-      <div class="closing-emblem">N</div>
+      <div class="closing-emblem"><img src="favicon.png" alt="" class="mono-img"></div>
       <p class="eyebrow">TWO YEARS TOGETHER</p>
-      <h2>الحكاية مكملة <em>بيكم.</em></h2>
-      <p>شكرًا إنكم كنتوا جزء من أول سنتين. مستنيين نشوف لحظاتكم.</p>
-      <a href="#capture" class="button button-outline">سجّل لحظتك تاني <span>↑</span></a>
+      <h2 data-i18n="close_h2">الحكاية مكملة <em>بيكم.</em></h2>
+      <p data-i18n="close_p">شكرًا إنكم كنتوا جزء من أول سنتين. مستنيين نشوف لحظاتكم.</p>
+      <div class="closing-actions"><a href="#capture" class="button button-outline" data-i18n="close_btn">سجّل لحظتك تاني <span>↑</span></a><button type="button" class="button button-ghost share-site" data-i18n="share_btn">شارك الاحتفال مع صحابك</button></div>
     </section>
   </main>
 
-  <footer class="site-footer"><a class="brand-lockup" href="#top"><span class="brand-mark">N</span><span>NEFERDIDI</span></a><span>MADE OF MOMENTS · 2026</span></footer>
+  <footer class="site-footer"><a class="brand-lockup" href="#top"><img class="brand-logo" src="logo-white.png" alt="Neferdidi"></a><nav class="social-links" id="socialLinks" aria-label="Social" hidden></nav><span>MADE OF MOMENTS · 2026</span></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="config.js"></script>
+  <script src="i18n.js"></script>
   <script src="app.js" defer></script>
 </body>
 </html>
