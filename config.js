@@ -3,7 +3,7 @@ window.NEFERDIDI_CONFIG = {
   cloudName: 'tg1iryqo',
   uploadPreset: 'neferdidi_moments',
   siteUrl: 'https://neferdidi-milktea.github.io/neferdidi-anniversary-site/',
-  menuUrl: 'https://neferdidi-milktea.github.io/Website/',
+  menuUrl: 'https://neferdidi-milktea.github.io/Website-2/',
   // Add a real GA4 measurement ID (G-XXXXXXXXXX) only after analytics/privacy approval.
   analyticsMeasurementId: '',
   socials: {
